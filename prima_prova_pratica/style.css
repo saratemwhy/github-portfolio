@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+}
+
+/*inizio prima nav bar*/
+#info {
+    display: flex;
+    width: 100%;
+    background-color: #eeeeee;
+    padding: 10px 0;
+}
+
+#info ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#info li {
+    display: flex;
+    padding: 3px 10px;
+    border-right: 2px solid black;
+    font-size: small;
+    font-weight: bold;
+}
+
+#info li:last-child {
+    border-right: none;
+    margin-right: 30px;
+}
+
+/*fine prima navbar*/
+
+/*inizio seconda navbar*/
+
+/*logo e li*/
+
+#categorie {
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+  
+}
+
+#categorie ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#categorie li {
+    display: flex;
+    padding: 3px 10px;
+    font-weight: bold;
+}
+
+#logo, #menu, #plus {
+    width: 33%;
+}
+
+
+#logo img {
+    width: 25%;
+    margin-left: 30px;
+}
+
+/*div che contiene search+preferiti e carrello*/
+
+#plus{
+    display: flex;
+   justify-content: flex-end;
+}
+
+/*barra di ricerca*/
+
+#search{
+    display: flex;
+}
+
+#search input {
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 0 30px 30px 0;
+}
+
+#search button {
+    border: none;
+    border-radius: 30px 0 0 30px;
+}
+
+#search button:hover {
+    cursor: pointer;
+    background-color: #a5a5a5;
+}
+
+#search img {
+    width: 15px;
+    height: 15px;
+}
+
+/*preferiti e aggiunta al carrello*/
+
+#favcart {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#favcart img {
+    width: 30px;
+    height: 30px;
+    margin: 0px 8px;
+    padding: 6px;
+}
+
+#favcart img:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+
+/*fine seconda navbar*/
+
+/*inizio div sottomenù*/
+
+#sottotitolo {
+    background-color: #eeeeee;
+    padding: 10px 0;
+}
+
+#sottotitolo p {
+    text-align: center;
+    display: block;
+    line-height: 2em;
+}
+
+#sottotitolo a {   
+    text-align: center; 
+    display: block;
+    color: black;
+    font-size: 1.02em;
+}
+
+/*fine div sottomenù*/
+
+/*hero banner */
+
+#slider {
+    display: flex;
+}
+
+#slider img {
+    width: 100%;
+}
+
+#cover {
+    position: absolute;
+    bottom: 25%;
+    left: 30px;
+}
+
+#cover h1, #cover h2 {
+    margin: 15px 0;
+    color: white;
+}
+
+#cover h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+}
+
+#cover button {
+    border-radius: 25px;
+    border: none;
+    opacity: 1.5;
+    padding: 10px;
+    margin: 0px 5px;
+
+}
+
+#cover button:hover {
+    cursor: pointer;
+}
+
+/*fine hero banner*/
+
+/*stile caroselli homepage*/
+
+.carosello {
+    margin: 0px 30px;
+}
+
+
+.title {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nextprev {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nextprev button {
+    border-radius: 50%;
+    border: none; 
+    padding: 15px 18px;
+    margin: 0 5px;
+    margin-bottom: 5%;  
+}
+
+
+.immaginicarosello {
+    display: grid; 
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.immaginicarosello img {
+    width: 100%;
+}
+
+.phrase {
+    margin-top: 25px;
+}
+
+.membershipimg p, .membershipimg h3, .membershipimg button{
+    position: relative;
+    bottom: 20%;
+    margin: 8px 8px;
+}
+
+.membershipimg p, .membershipimg h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.membershipimg button {
+    border-radius: 25px;
+    border: none;
+    opacity: 1.5;
+    padding: 8px;
+    margin-bottom: 80px;
+}
+
+.membershipimg button:hover {
+    cursor: pointer;
+}
+
+.immaginicarosello a {
+    text-decoration: none;
+    color: black;
+}
+
+/*fine stile caroselli homepage*/
+
+/*creo una section che includa il carosello e l'immagine principale e gli assegno display:flex*/
+
+.dettaglioScarpe {
+    display: flex;
+    margin: 5% 15%;
+}
+
+/*css section galleria con immagini scarpe*/
+
+.galleriaScarpe {
+    display: flex;
+    width: 50%;
+}
+
+.carousel {
+    width: 50px;
+}
+
+.carousel img, video {
+    width: 100%;  
+}
+
+.carousel img:hover, .carousel video:hover {
+    cursor: pointer;
+}
+
+.main_img {
+    width: 547px;
+    margin-left: 5px;
+}
+
+.main_img img {
+    width: 100%;
+}
+
+/*css section con descrizione, scelta taglie e aggiunta al carrello*/
+
+.sceltaTaglie {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.titleMain_img {
+    font-weight: bold;
+}
+
+.titleMain_img :nth-child(3) {
+    margin-top: 10px;
+}
+
+.scritte {
+    display: flex;
+}
+
+.selectSize, .sizeGuide {
+    width: 33%;
+    margin-top: 40px;
+    margin-right: 50px;
+    height: 10%;
+}
+
+.selectSize h3, .sizeGuide h3 {
+    font-size: medium;
+}
+
+.grid_taglie {
+    margin-top: 10px;
+}
+
+.grid_taglie button {
+    width: 80px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 15px;
+    background-color: white;
+    border: 0.5px solid grey;
+}
+
+.grid_taglie button:hover{
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+
+.aggiungiCarrello {
+    margin-top: 30px;
+}
+
+.aggiungiCarrello button {
+    border-radius: 25px;
+    border: none;
+    opacity: 1.5;
+    padding: 20px 40px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.aggiungiCarrello :nth-child(1) {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+.aggiungiCarrello button:hover{
+    cursor: pointer;
+}
+
+/*gestisco errore misura non selezionata*/
+
+#errorTaglia {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+/*gestione popup carrello*/
+
+.popupCarrello {
+    position: absolute;
+    width: 400px;
+    padding-left: 5px;
+    top: 129px;
+    right: 0;
+    background-color: white;
+    visibility: hidden;
+}
+
+#cDescription img {
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+#cTitle {
+    display: flex;
+}
+
+#cTitle title {
+    font-size: small;
+}
+
+#cTitle img {
+    width: 10px;
+    height: 10px;
+    margin: 8px 0;
+}
+
+#closeButton {
+    border-radius: 50%;
+    border: none;
+    opacity: 1.5;
+    margin-left: 180px;
+}
+
+#cTitle button:hover {
+    cursor: pointer;
+}
+
+#cDescription {
+    margin: 20px 0;
+}
+
+#cButton button:hover {
+    cursor: pointer;
+}
+
+#cButton button {
+    border-radius: 25px;
+    border: none;
+    opacity: 1.5;
+    padding: 15px 20px;
+    margin: 10px 0;
+}
+
+#cButton :nth-child(2){
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+/*INIZIO CSS CARRELLO*/
+
+.carrelloSection {
+    display: flex;
+    margin: 5% 10%;
+}
+
+.datiScarpe {
+    display: flex;
+    border-bottom: 0.5px solid rgb(173, 173, 173);
+    padding: 20px 0;
+}
+
+.datiScarpe img {
+    width: 180px;
+}
+
+.ds1 {
+    margin-right: 30px;
+}
+
+.ds1 img {
+    margin-bottom: 20px;
+}
+
+.ds2 {
+    line-height: 30px;
+}
+
+.ds3 {
+    margin-left: 250px;
+    display: flex;
+    height: 30px;
+}
+
+.ds3 img {
+    width: 20px;
+}
+
+.ds3 button {
+    cursor: pointer;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 30%;
+    margin-left: 15px;
+}
+
+.dettaglioRiepilogo {
+    line-height: 50px;
+    margin-left: 40px;
+    width: 30%;
+}
+
+.spedizione, .totale {
+    border-bottom: 0.5px solid rgb(173, 173, 173);
+}
+
+.subtotale, .totale, .spedizione {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonPagamento {
+    margin-top: 20px;
+}
+
+.buttonPagamento button:hover {
+    cursor: pointer;
+}
+
+.buttonPagamento button {
+    border-radius: 25px;
+    border: none;
+    opacity: 1.5;
+    padding: 15px 20px;
+    margin: 10px 0;
+    width: 375px;
+    font-size: large;
+}
+
+.buttonPagamento :nth-child(1) {
+    background-color: black;
+    color: white;
+}
+
+/*GESTIONE CSS FORM DATI CONSEGNA - PARTE CONSEGNA*/
+
+
+.opzioniConsegna ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.opzioniConsegna {
+    width: 50%;
+}
+
+
+.buttonP {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.buttonP button {
+    height: 3.5em;
+    margin-right: 10px;
+    width: 50%;
+    border-radius: 7px;
+}
+
+.NeC li, .contatti li {
+    width: 50%;
+}
+.NeC input, .luogo input, .contatti input {
+    width: 100%;
+}
+
+.indirizzo ul, .NeC ul, .luogo ul, .contatti ul {
+    display: flex;
+    width: 100%;
+}
+
+.indirizzo li, .indirizzo input {
+    width: 100%;
+}
+
+.luogo li {
+    width: 33.3%;
+}
+
+form input {
+    border-radius: 7px;
+    height: 3.5em;
+    border: 1px solid rgb(199, 199, 199)
+}
+
+form li {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.salva button {
+    border-radius: 25px;
+    border: 1px solid rgb(199, 199, 199);
+    height: 2.5em;
+}
+
+.salva {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.opzioniConsegna span {
+    visibility: hidden;
+    color: red;
+}
+
+#modulo {
+    margin: 5% 20%;
+}
+
+.successivo h3 {
+    border-bottom: 0.5px solid rgb(199, 199, 199);
+    padding: 20px 0;
+}
+.successivo a{
+    text-decoration: none;
+}
+
+
+/*CSS SEZIONE PAGAMENTO */
+
+.moduloPagamento {
+    display: flex;
+    margin: 10% 20%;
+}
+
+#formPagamento h2 {
+    margin-bottom: 30px;
+}
+
+#giftC {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#giftC p {
+    margin-left: 5px;
+}
+
+#metodoPagamento {
+    display: flex;
+    margin-top: 15px;
+}
+
+#inputMetodo input {
+    display: flex;
+    margin-bottom: 21px;
+    margin-right: 10px;
+}
+
+#imgMetodo img {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+}
+
+#aggiungiCarta {
+    border: 0.5px solid rgb(199, 199, 199);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#aggiungiCarta input {
+    width: 32%;
+    padding: 5px;
+}
+
+#aggiungiCarta h3 {
+    margin-bottom: 20px;
+}
+
+#pagaOra {
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    opacity: 1.5;
+    padding: 10px 10px;
+    margin: 10px 0;
+    width: 30%;
+    font-size: large;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+/* THANK YOU PAGE, STATICA */
+
+
+#thanks, #order {
+    display: block;
+     margin-top: 40px;
+    text-align: center;
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#resume img {
+    width: 100px;
+    margin: 0 auto;
+}
+

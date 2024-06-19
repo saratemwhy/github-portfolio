@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="moduloPagamento">
+
+        <div id="formPagamento"> <!--form pagamento-->
+
+            <h2>Pagamento</h2>
+    
+            <div id="paeseFattura">
+                <h3>Paese/regione di fatturazione</h3>
+                <p>Italia</p>
+            </div>
+    
+            <div id="giftC">
+                <input type="checkbox" name="checkVoucher" id="Voucher">
+                <p>Possiedi una giftCard, un Voucher prodotto o un codice promozionale?</p>
+            </div>
+    
+            <h3>Seleziona un metodo di pagamento</h3>
+            <div id="metodoPagamento">
+                
+                <div id="inputMetodo">
+                    <input type="radio" name="radioButton" id="cartaCredito" value="" checked>
+                    <input type="radio" name="radioButton" id="Paypa">
+                    <input type="radio" name="radioButton" id="Gpay">
+                </div>
+                <div id="imgMetodo">
+                    <img src="./MATERIALE/card.png" alt="visaPay">
+                    <img src="./MATERIALE/paypal.png" alt="paypalPay">
+                    <img src="./MATERIALE/google-pay.png" alt="googlePaym">
+    
+                </div>
+            </div>
+
+            <form action="" method="post"> <!--form carta di credito-->
+    
+                <div id="aggiungiCarta">
+                    <h3>Aggiungi carta</h3>
+                        <div>
+                            <input type="text" name="numeroC" placeholder="Numero Carta" id="numCarta" autocomplete="off" >
+                            <input type="text" name="meseA" placeholder="MM/AA" id="meseAnno" autocomplete="off" >
+                            <input type="text" name="codecard" placeholder="CVV" id="cvvcode" autocomplete="off" >
+                        </div>
+                </div>
+
+                
+
+                <div>
+                    <button id="pagaOra" type="submit">Paga ora</button>
+                </div>
+            </form>
+
+    
+        </div>
+
+    </section>
+
+
+    <script defer src="pagamento.js"></script>
+</body>
+</html>

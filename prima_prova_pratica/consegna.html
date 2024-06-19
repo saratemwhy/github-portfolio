@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consegna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modulo">
+        <h2>Pagamento</h2>
+
+        <section class="datiP">
+            <h3>Opzioni di consegna</h3>
+
+            <div class="opzioniConsegna">
+
+            
+            <div class="buttonP">
+                <button>Spedizione</button>
+                <button>Ritiro</button>
+            </div>
+
+            
+            <form action="pagina.jsp" method="post"> <!--FORM-->
+                
+                <div class="NeC">
+                    <ul>
+                        <li>
+                            <input type="text" id="name" name="nome" placeholder="Nome" autocomplete="off" >
+                            <span id="spanName">Inserisci un nome valido!</span>
+                        </li>
+                        <li>
+                            <input type="text" id="surname" name="cognome" placeholder="Cognome" autocomplete="off" >     
+                            <span id="spanSurname">Inserisci un cognome valido!</span>           
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="indirizzo">
+                    <ul>
+                        <li>
+                            <input type="text" id="address" name="Indirizzo e numero civico" placeholder="Indirizzo e numero civico" autocomplete="off" >     
+                            <span id="spanAddress">Inserisci un indirizzo valido!</span>           
+                        </li> 
+                    </ul>
+                </div>
+                
+                 <br>
+                
+                <p>Aggiungi Azienda, C/O, App, Interno, Unità</p>
+
+                <div class="luogo">
+                    <ul>
+                        <li>
+                            <input type="text" id="cap" name="cap" placeholder="Cap" autocomplete="off" >
+                            <span id="spanCap">Inserisci un cap valido!</span>
+                        </li>
+    
+                        <li>
+                            <input type="text" id="city" name="città" placeholder="Città" autocomplete="off" >
+                            <span id="spanCity">Inserisci una città valida!</span>
+                        </li>
+    
+                        <li>
+                            <input type="text" id="country" name="paese" placeholder="Paese/Regione" autocomplete="off" >
+                            <span id="spanCountry">Inserisci un paese valido!</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contatti">
+                    <ul>
+                        <li>
+                            <input type="text" id="mail" name="email" placeholder="Email" autocomplete="off" >
+                            <span id="spanMail">Inserisci una mail valida!</span>
+                        </li>
+    
+                        <li>
+                            <input type="text" id="phone" name="numero" placeholder="Numero di Telefono" autocomplete="off" >
+                            <span id="spanPhone">Inserisci un telefono valido!</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="salva">
+                    <button type="submit">Salva e continua</button>
+                </div>
+            </form>  <!--FINE FORM-->
+            
+            <div class="successivo">
+                <a href="pagamento.html"><h3>Pagamento</h3></a>
+                <h3>Verifica dell'ordine</h3>
+            </div>
+           
+
+        </section>
+    </div>
+
+    <script defer src="form.js"></script>
+    
+</body>
+</html>

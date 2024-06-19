@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabAir Shoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header> <!--header uguale alla prima pagina html-->
+        <nav id="info">
+            <ul>
+                <li>Trova un negozio</li>
+                <li>Aiuto</li>
+                <li>Unisciti a noi</li>
+                <li>Accedi</li>
+            </ul>
+        </nav>
+        <nav id="categorie">
+    
+            <div id="logo">
+                <img src="./MATERIALE/logo.png" alt="logolab">
+            </div>
+    
+    
+            <div id="menu">
+                <ul>
+                    <li>Novità e in evidenza</li>
+                    <li>Uomo</li>
+                    <li>Donna</li>
+                    <li>Kids</li>
+                    <li>Outlet</li>
+                </ul>
+            </div>
+    
+            <div id="plus">
+    
+                <div id="search">
+                    <button><img src="./MATERIALE/glass.png" alt=""></button>
+                    <input type="text" placeholder="Search..">
+                </div>
+    
+                <div id="favcart">
+                    <img src="./MATERIALE/love.png" alt="preferiti">
+                    <img src="./MATERIALE/market.png" alt="shoppingbag">
+                </div>
+            </div>
+    
+        </nav>
+    
+        <div id="sottotitolo">
+            <p>Tutti i nuovi arrivi</p>
+            <a href="">Acquista</a>
+        </div>
+    </header>
+
+    <section class="dettaglioScarpe">
+
+        <div class="galleriaScarpe">
+
+            <div class="carousel"> <!--div che contiene il carosello immagini e l'immagine di default-->
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/1.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/2.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/3.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/4.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/5.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/6.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/7.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/8.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <img src="./MATERIALE/Scarpa/9.jpg" alt="scarpa_img1">
+                </div>
+
+                <div>
+                    <video src="./MATERIALE/Scarpa/video.mp4" autoplay="" loop="" muted=""></video>
+                </div>
+
+            </div>
+
+            <div class="main_img">
+                <img src="./MATERIALE/Scarpa/3.jpg" alt="default_img">
+            </div>
+            </div>
+
+            <div class="sceltaTaglie"> <!--div che contiene la scelta taglie, i dettagli e l'aggiunta al carrello-->
+
+                <div class="titleMain_img">
+                    <h3>Nike Dunk Low Retro</h3>
+                    <p>Scarpa uomo</p>
+                    <p>119,99 €</p>
+                </div>
+
+                <div class="scritte">
+
+                    <div class="selectSize">
+                        <h3>Seleziona la taglia/misura</h3>
+                    </div>
+
+                    <div class="sizeGuide">
+                        <h3>Guida alle taglie e alle misure</h3>
+                    </div>
+
+                </div>
+
+                <div class="grid_taglie">
+                    <!--gestito con javascript-->
+                </div>
+
+                <div id="errorTaglia">
+                    <h2>SELEZIONA LA MISURA!</h2>
+                </div>
+
+                <div class="aggiungiCarrello">
+                    <button id="buttonCarrello">Aggiungi al carrello</button>
+                    <button>Aggiungi ai preferiti</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="popupCarrello"> <!--section che contiene il popup del carrello-->
+            <div id="cTitle">
+                <img src="./MATERIALE/check.svg" alt="spunta">
+                <h3>Aggiunto al carrello</h3>
+                <button id="closeButton">x</button>
+            </div>
+            <div id="cDescription">
+                <img src="./MATERIALE/Scarpa/3.jpg" alt="previewScarpa">
+                <h3>Nike Dunk Low Retro</h3>
+                <p>Scarpa uomo</p>
+                <p>119,99 €</p>
+            </div>
+
+            <div id="cButton">
+                <button id="cButton1">Visualizza carrello</button>
+                <button id="cButton2">Pagamento</button>
+            </div>
+    </section>
+
+    <script defer src="script.js"></script>
+    <script defer src="carrello.js"></script>
+
+</body>
+</html>

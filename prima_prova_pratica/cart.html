@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="carrelloSection"> <!--section che racchiude le due section-->
+
+        <div class="dettaglioCarrello"> <!--div per il dettaglio scarpe-->
+
+            <h2>Carrello</h2>
+        
+            <div class="datiScarpe" id="div1Scarpa"> <!--div scarpa 1-->
+                <div class="ds1">   
+                    <img src="./MATERIALE/Home-page/scarpa_1.jpg" alt="previewScarpa">
+                    <h3>Ritiro gratuito</h3>
+                    <a href="">Trova un negozio</a>
+                </div>
+
+                <div class="ds2">
+                    <h3>Nike Dunk Low Retro</h3>
+                    <p>Scarpa uomo</p>
+                    <p>Bianco/nero</p>
+                    <p>Taglia/misura: 47</p>
+                    <p>Quantità: 1</p>
+                </div>
+
+                <div class="ds3">
+                    <p id="p1">119.99</p>
+                    <p> €</p>
+                    <button id="b1"><img src="./MATERIALE/recycle-bin.png" alt="cestino"></button>
+                </div>
+            </div>
+
+            <div class="datiScarpe" id="div2Scarpa"> <!--div scarpa 2-->
+                <div class="ds1">   
+                    <img src="./MATERIALE/Home-page/scarpa_3.jpg" alt="previewScarpa">
+                    <h3>Ritiro gratuito</h3>
+                    <a href="">Trova un negozio</a>
+                </div>
+
+                <div class="ds2">
+                    <h3>Nike Dunk Low Retro</h3>
+                    <p>Scarpa donna</p>
+                    <p>Bianco/bianco/medium olive</p>
+                    <p>Taglia/misura: 42</p>
+                    <p>Quantità: 1</p>
+                </div>
+
+                <div class="ds3">
+                    <p id="p2">119.99</p>
+                    <p> €</p>
+                    <button id="b2"><img src="./MATERIALE/recycle-bin.png" alt="cestino"></button>
+                </div>
+            </div>
+
+            <div>
+                <h3>Preferiti</h3>
+                <h4>Vuoi visualizzare i preferiti?</h4>
+                <p><a href="">Unisciti a noi</a> o <a href="">Accedi</a></p> 
+            </div>
+
+        </div>
+
+        <div class="dettaglioRiepilogo"> <!--div per il riepilogo costi-->
+            <h2>Riepilogo</h2>
+
+            <div class="costi">
+                <p>Hai un codice promozionale?</p>
+                <div class="subtotale">
+                    <h4>Subtotale</h4>
+                    <p id="sub"></p>
+                </div>
+                <div class="spedizione">
+                    <p>Costi di spedizione e gestione previsti</p>
+                    <p>Gratis</p>
+                </div>
+
+                <div class="totale">
+                    <h4>Totale</h4>
+                    <p id="tot"></p>
+                </div>
+
+                <div class="buttonPagamento">
+                    <button>Vai al pagamento</button>
+                    <button>Paypal</button>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    
+
+    <script defer src="carrello.js"></script>
+</body>
+</html>
