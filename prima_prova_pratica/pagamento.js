@@ -46,3 +46,6 @@ formPagamento.addEventListener("submit", (e) => {
 
 })
 
+document.querySelector("#pagaOra").addEventListener("click", () => {
+    window.location.href = 'thanks.html';
+});
